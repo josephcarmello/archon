@@ -3,7 +3,7 @@ from handlers import handle_help, handle_hi, handle_admin, handle_rcon_command, 
 def get_command_mapping(help_embeds, command_handler):
     return {
         'help': lambda message, args, auth_level: handle_help(message, args, help_embeds),
-        'hi': handle_hi,
+        'hi':  lambda message, args, auth_level: handle_hi(message, args),
         'admin': lambda message, args, auth_level: handle_admin(message, args, auth_level, command_handler),
     }
 

@@ -1,3 +1,5 @@
+import discord
+import logging
 from config import Config
 from command_handler import CommandHandler
 
