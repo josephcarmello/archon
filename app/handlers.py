@@ -12,7 +12,7 @@ async def handle_help(message, args, help_embeds):
         await message.channel.send(embed=embed)
 
 async def handle_hi(message, args):
-    embed = discord.Embed(description="Hello! I'm the Minecraft RCON bot!")
+    embed = discord.Embed(description="Hello! I'm Archon the Minecraft RCON bot!")
     await message.channel.send(embed=embed)
 
 async def handle_admin(message, args, auth_level, command_handler):
